@@ -1,0 +1,259 @@
+:root {
+    --background: #1F1F1F;
+    --foreground: #FFFFFF;
+    --card: #303030;
+    --primary: #FF6F20;
+    --primary-hover: #e5601a;
+    --primary-foreground: #FFFFFF;
+    --border: #3A3A3A;
+    --radius: 0.75rem;
+    --text-muted: #A0A0A0;
+    --destructive: #EF4444;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.app-container {
+    min-height: 100vh;
+}
+
+.main-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 32px 16px;
+}
+
+.navbar {
+    background-color: var(--card);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 16px;
+    height: 32px;
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    color: var(--foreground);
+}
+
+.btn-ghost:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.btn-default {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0 4px 6px -1px rgba(255, 111, 32, 0.3);
+}
+
+.btn-default:hover {
+    background-color: var(--primary-hover);
+    box-shadow: 0 6px 8px -2px rgba(255, 111, 32, 0.5);
+}
+
+.btn-cart {
+    position: relative;
+    padding-right: 24px;
+}
+
+.cart-badge {
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.icon {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+}
+
+.text-center { text-align: center; }
+.text-3xl { font-size: 1.875rem; }
+.text-2xl { font-size: 1.5rem; }
+.text-lg { font-size: 1.125rem; }
+.text-sm { font-size: 0.875rem; }
+.text-xl { font-size: 1.25rem; }
+.font-bold { font-weight: 700; }
+.font-semibold { font-weight: 600; }
+.text-foreground { color: var(--foreground); }
+.text-muted-foreground { color: var(--text-muted); }
+.text-primary { color: var(--primary); }
+.text-card-foreground { color: var(--foreground); }
+.text-destructive { color: var(--destructive); }
+
+.space-y-8 > * + * { margin-top: 2rem; }
+.space-y-6 > * + * { margin-top: 1.5rem; }
+.space-y-4 > * + * { margin-top: 1rem; }
+.space-y-3 > * + * { margin-top: 0.75rem; }
+.space-x-4 > * + * { margin-left: 1rem; }
+.space-x-3 > * + * { margin-left: 0.75rem; }
+.space-x-2 > * + * { margin-left: 0.5rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mt-1 { margin-top: 0.25rem; }
+.pt-4 { padding-top: 1rem; }
+.py-6 { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+.p-4 { padding: 1rem; }
+
+.grid { display: grid; }
+.gap-6 { gap: 1.5rem; }
+.gap-8 { gap: 2rem; }
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.lg\:col-span-2 { grid-column: span 2 / span 2; }
+.lg\:col-span-1 { grid-column: span 1 / span 1; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+
+@media (min-width: 768px) {
+    .md\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+    .lg\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .lg\:grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1280px) {
+    .xl\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+.bg-card { background-color: var(--card); }
+.border-border { border-color: var(--border); }
+.border { border-width: 1px; }
+.border-t { border-top-width: 1px; }
+.rounded-xl { border-radius: var(--radius); }
+.rounded-lg { border-radius: 0.5rem; }
+.rounded-t-lg { border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; }
+.shadow-sm { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); }
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.flex-1 { flex: 1 1 0%; }
+.shrink-0 { flex-shrink: 0; }
+.whitespace-nowrap { white-space: nowrap; }
+
+.aspect-4-3 {
+    aspect-ratio: 4 / 3;
+}
+
+.relative { position: relative; }
+.overflow-hidden { overflow: hidden; }
+.object-cover {
+    object-fit: cover;
+}
+
+.transition-colors { transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+.transition-transform { transition-property: transform; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+.duration-300 { transition-duration: 300ms; }
+.group:hover .group-hover\:scale-105 { transform: scale(1.05); }
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--foreground);
+    border-color: var(--border);
+}
+.btn-outline:hover {
+    background-color: var(--border);
+}
+
+.w-8 { width: 2rem; }
+.h-8 { height: 2rem; }
+.p-0 { padding: 0; }
+.text-center { text-align: center; }
+
+footer {
+    background-color: var(--card);
+    border-top: 1px solid var(--border);
+    padding: 16px 0;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.footer-nav a, .social-icons a {
+    color: var(--text-muted);
+    text-decoration: none;
+    margin-left: 16px;
+    transition: color 0.2s;
+}
+
+.footer-nav a:hover {
+    color: var(--primary);
+}
+
+.social-icons img {
+    width: 20px;
+    height:20px;
+}
+
+.sticky {
+    position: sticky;
+}
+.top-4 {
+    top: 1rem;
+}

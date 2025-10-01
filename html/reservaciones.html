@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservaciones - Tacos al Vapor</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/rerva.css">
+</head>
+<body>
+    <div class="app-container">
+        <nav class="navbar">
+            <div class="navbar-content">
+                <div class="nav-left">
+                    <h1 class="logo">Tacos al Vapor</h1>
+                    <a href="inicio.html" class="btn btn-ghost">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <span>Inicio</span>
+                    </a>
+                    <a href="index.html" class="btn btn-default"> 
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/><path d="M7 2v20"/><path d="M21 15V2v0a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3z"/></svg>
+                        <span>Menú</span>
+                    </a>
+                    <a href="reservaciones.html" class="btn btn-ghost">
+                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+                        <span>Reservaciones</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main class="main-content">
+            <div class="max-w-4xl mx-auto space-y-8">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold text-foreground mb-2">HAZ UNA RESERVACIÓN</h2>
+                    <p class="text-muted-foreground">Reserva tu mesa para una experiencia gastronómica inolvidable</p>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="aspect-[4/3] rounded-lg overflow-hidden">
+                            <img src="../sourses/img/Presentacion.png" alt="Restaurant Interior" class="w-full h-full object-cover">
+                        </div>
+                        <div class="card bg-card border-border">
+                            <div class="card-header">
+                                <h3 class="card-title text-card-foreground">Disfruta una agradable experiencia</h3>
+                            </div>
+                            <div class="card-content space-y-4">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    <span class="text-muted-foreground">Moderno y accesible</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    <span class="text-muted-foreground">Autentica cocina mexicana</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    <span class="text-muted-foreground">Grandes pantallas</span>
+                                </div>
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                    <span class="text-muted-foreground">Disponibilidad de 9 am a 6 pm</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-card border-border">
+                        <div class="card-header">
+                            <h3 class="card-title text-card-foreground">DETALLES DE RESERVA</h3>
+                        </div>
+                        <div class="card-content">
+                            <form class="space-y-6" action="../PHP/registrar_reservacion.php" method="POST">
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="space-y-2">
+                                        <label for="name" class="label">Nombre Completo</label>
+                                        <input id="name" name="nombre" class="input" required>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label for="email" class="label">Correo</label>
+                                        <input id="email" name="correo" type="email" class="input" required>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="phone" class="label">Número Telefónico</label>
+                                    <input id="phone" name="telefono" type="tel" class="input" required>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="space-y-2">
+                                        <label for="date" class="label">Fecha</label>
+                                        <input id="date" name="fecha" type="date" class="input" required>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <label for="time" class="label">Hora</label>
+                                         <select id="time" name="hora" class="select" required>
+                                                <option value="" disabled selected>Seleccionar</option>
+                                                <option value="09:30">9:30 AM</option>
+                                                <option value="10:00">10:00 AM</option>
+                                                <option value="10:30">10:30 AM</option>
+                                                <option value="11:00">11:00 AM</option>
+                                                <option value="11:30">11:30 AM</option>
+                                                <option value="12:00">12:00 PM</option>
+                                                <option value="12:30">12:30 PM</option>
+                                                <option value="13:00">1:00 PM</option>
+                                                <option value="13:30">1:30 PM</option>
+                                                <option value="14:00">2:00 PM</option>
+                                                <option value="14:30">2:30 PM</option>
+                                                <option value="15:00">3:00 PM</option>
+                                                <option value="15:30">3:30 PM</option>
+                                                <option value="16:00">4:00 PM</option>
+                                                <option value="16:30">4:30 PM</option>
+                                                <option value="17:00">5:00 PM</option>
+                                                <option value="17:30">5:30 PM</option>
+                                                <option value="18:00">6:00 PM</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="guests" class="label">Número de Invitados</label>
+                                    <select id="guests" name="invitados" class="select" required>
+                                            <option value="" disabled selected>Selección de Personas</option>
+                                            <option value="1">1 Persona</option>
+                                            <option value="2">2 Personas</option>
+                                            <option value="3">3 Personas</option>
+                                            <option value="4">4 Personas</option>
+                                            <option value="5">+5 Personas</option>
+                                        </select>
+                                </div>
+                                <div class="space-y-2">
+                                    <label for="requests" class="label">Indicaciones específicas</label>
+                                    <textarea id="requests" name="indicaciones" class="textarea" rows="3"></textarea>
+                                </div>
+                                 <button type="submit" class="btn btn-default w-full">
+                                    REALIZAR RESERVACIÓN
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 KenGF Todos los derechos reservados.</p>
+            <nav class="footer-nav">
+                <a href="inicio.html">Acerca de</a>
+            </nav>
+            <div class="social-icons">
+                <a rel="https://github.com/K3NSUPR3" target="_blank" aria-label="GitHub">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="20" height="20">
+                </a>
+            </div>
+        </div>
+    <script src="../JS/script.js"></script>
+    </footer>
+</body>
+</html>

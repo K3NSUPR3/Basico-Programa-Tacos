@@ -1,0 +1,19 @@
+.payment-container {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 2rem;
+            background-color: var(--card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .payment-container h2 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+        .payment-container p {
+            color: var(--muted-foreground);
+            margin-bottom: 2rem;
+        }

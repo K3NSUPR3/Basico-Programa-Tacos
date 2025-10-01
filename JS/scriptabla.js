@@ -9,7 +9,7 @@
       const fila = btn.closest("tr");
       const datos = Array.from(fila.querySelectorAll("input")).map(input => input.value);
       console.log("Datos guardados:", datos);
-      // Aquí puedes hacer fetch/AJAX para guardar en la BD
+      // Aquí puede hacer fetch/AJAX para guardar en la BD
     }
 
     function eliminar(btn) {

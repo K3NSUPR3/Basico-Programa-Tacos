@@ -1,40 +1,175 @@
-        .max-w-2xl { max-width: 42rem; }
-        .mx-auto { margin-left: auto; margin-right: auto; }
-        .space-y-8 > :not([hidden]) ~ :not([hidden]) { margin-top: 2rem; }
-        .text-center { text-align: center; }
-        .space-y-4 > :not([hidden]) ~ :not([hidden]) { margin-top: 1rem; }
-        .flex { display: flex; }
-        .justify-center { justify-content: center; }
-        .w-16 { width: 4rem; }
-        .h-16 { height: 4rem; }
-        .text-primary { color: #FF6F20; } /* Asume un color para tu tema */
-        .text-3xl { font-size: 1.875rem; }
-        .font-bold { font-weight: 700; }
-        .text-lg { font-size: 1.125rem; }
-        .grid { display: grid; }
-        .gap-6 { gap: 1.5rem; }
-        .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
-        .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-        .text-2xl { font-size: 1.5rem; }
-        .text-sm { font-size: 0.875rem; }
-        .text-muted-foreground { color: #6B7280; } /* Asume un color para tu tema */
-        .w-6 { width: 1.5rem; }
-        .h-6 { height: 1.5rem; }
-        .font-semibold { font-weight: 600; }
-        .text-left { text-align: left; }
-        .border-t { border-top-width: 1px; }
-        .pt-6 { padding-top: 1.5rem; }
-        .mb-4 { margin-bottom: 1rem; }
-        .space-y-3 > :not([hidden]) ~ :not([hidden]) { margin-top: 0.75rem; }
-        .mt-2 { margin-top: 0.5rem; }
-        .w-2 { width: 0.5rem; }
-        .h-2 { height: 0.5rem; }
-        .rounded-full { border-radius: 9999px; }
-        .w-full { width: 100%; }
-        .flex-col { flex-direction: column; }
-        .justify-between { justify-content: space-between; }
-        .btn-default { /* Estilos para el botón */ }
-        .card { /* Estilos para las tarjetas */ }
-        .card-header { /* Estilos para los encabezados de tarjeta */ }
-        .card-title { /* Estilos para los títulos de tarjeta */ }
-        .card-content { /* Estilos para el contenido de tarjeta */ }
+.max-w-2xl 
+{
+    max-width: 42rem;
+}
+
+.mx-auto 
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) 
+{
+    margin-top: 2rem;
+}
+
+.text-center 
+{
+    text-align: center;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) 
+{
+    margin-top: 1rem;
+}
+
+.flex 
+{
+    display: flex;
+}
+
+.justify-center 
+{
+    justify-content: center;
+}
+
+.w-16 
+{
+    width: 4rem;
+}
+
+.h-16 
+{
+    height: 4rem;
+}
+
+.text-primary 
+{
+    color: #FF6F20;
+}
+
+.text-3xl 
+{
+    font-size: 1.875rem;
+}
+
+.font-bold 
+{
+    font-weight: 700;
+}
+
+.text-lg 
+{
+    font-size: 1.125rem;
+}
+
+.grid 
+{
+    display: grid;
+}
+
+.gap-6 
+{
+    gap: 1.5rem;
+}
+
+.grid-cols-1 
+{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.md\:grid-cols-3 
+{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.text-2xl 
+{
+    font-size: 1.5rem;
+}
+
+.text-sm 
+{
+    font-size: 0.875rem;
+}
+
+.text-muted-foreground 
+{
+    color: #6B7280;
+}
+
+.w-6 
+{
+    width: 1.5rem;
+}
+
+.h-6 
+{
+    height: 1.5rem;
+}
+
+.font-semibold 
+{
+    font-weight: 600;
+}
+
+.text-left 
+{
+    text-align: left;
+}
+
+.border-t 
+{
+    border-top-width: 1px;
+}
+
+.pt-6 
+{
+    padding-top: 1.5rem;
+}
+
+.mb-4 
+{
+    margin-bottom: 1rem;
+}
+
+.space-y-3 > :not([hidden]) ~ :not([hidden]) 
+{
+    margin-top: 0.75rem;
+}
+
+.mt-2 
+{
+    margin-top: 0.5rem;
+}
+
+.w-2 
+{
+    width: 0.5rem;
+}
+
+.h-2 
+{
+    height: 0.5rem;
+}
+
+.rounded-full 
+{
+    border-radius: 9999px;
+}
+
+.w-full 
+{
+    width: 100%;
+}
+
+.flex-col 
+{
+    flex-direction: column;
+}
+
+.justify-between 
+{
+    justify-content: space-between;
+}
